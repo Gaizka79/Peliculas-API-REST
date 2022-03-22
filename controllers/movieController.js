@@ -13,13 +13,17 @@ const createMovie = (req, res) => {
     res.status(201).send(`Película ${newMovie.Title} guardada`);
 }
 
-const updateMovie = (req, res) => { 
-
+const updateMovie = (req, res) => {
+    newMovie.Title = req.body.Title;
+    console.log(newMovie);
+    res.status(200).send(`Película ${newMovie.Title} actualizada`);
 }
 
 const deleteMovie = (req, res) => {
-
- }
+    res.status(200).send(`Película ${newMovie.Title} borrada`);
+    newMovie = '--- Aquí no hay peli ---';
+    console.log(newMovie);
+}
 
 const movie = {
     getMovie,
