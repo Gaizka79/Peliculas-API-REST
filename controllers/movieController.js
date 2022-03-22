@@ -22,7 +22,7 @@ const updateMovie = (req, res) => {
 const deleteMovie = (req, res) => {
     res.status(200).send(`Película ${newMovie.Title} borrada`);
     newMovie = '--- Aquí no hay peli ---';
-    console.log(newMovie);
+    console.log({ message: newMovie });
 }
 
 const movie = {
