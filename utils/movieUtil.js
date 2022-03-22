@@ -10,7 +10,7 @@ async function getMovie (filmName) {
         let film = await response.json(); //{}
         return film;
     } catch (error) {
-        console.log(`EROR : ${error.stack}`);
+        console.log(`ERROR : ${error.stack}`);
     }
 } 
 

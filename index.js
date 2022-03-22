@@ -5,8 +5,8 @@ const express = require('express'); // Importando módulo NPM (libería)
 const movieRouter = require('./routes/movieRoute');
 
 
-const app = express() // Inicializa el servidor. App es un bjeto que representa el server
-const port = 3000
+const app = express(); // Inicializa el servidor. App es un bjeto que representa el server
+const port = 3000;
 
 app.use(express.json()); // Para habilitar recepción de datos JSON en una request
 
